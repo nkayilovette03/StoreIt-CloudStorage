@@ -112,7 +112,7 @@ export const formatDateTime = (isoString: string | null | undefined) => {
 
 export const getFileIcon = (
   extension: string | undefined,
-  type: FileType | string,
+  type: FileType | string
 ) => {
   switch (extension) {
     // Document
@@ -190,6 +190,7 @@ export const getUsageSummary = (totalSpace: any) => {
       size: totalSpace.document.size,
       latestDate: totalSpace.document.latestDate,
       icon: "/assets/icons/file-document-light.svg",
+      iconDark: "/assets/icons/file-document-dark.svg",
       url: "/documents",
     },
     {

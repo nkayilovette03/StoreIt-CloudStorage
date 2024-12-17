@@ -13,10 +13,6 @@
   </div>
 
 <h3 align="center">Storage and File Sharing Platform</h3>
-
-   <div align="center">
-     Build this project step by step with our detailed tutorial on <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a> YouTube. Join the JSM family!
-    </div>
 </div>
 
 ## 📋 <a name="table">Table of Contents</a>
@@ -29,24 +25,9 @@
 6. 🔗 [Assets](#links)
 7. 🚀 [More](#more)
 
-## 🚨 Tutorial
-
-This repository contains the code corresponding to an in-depth tutorial available on our YouTube
-channel, <a href="https://www.youtube.com/@javascriptmastery/videos" target="_blank"><b>JavaScript Mastery</b></a>.
-
-If you prefer visual learning, this is the perfect resource for you. Follow our tutorial to learn how to build projects
-like these step-by-step in a beginner-friendly manner!
-
-<a href="https://youtu.be/lie0cr3wESQ?si=yLQyhMrYLjpysnqE" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/1736fca5-a031-4854-8c09-bc110e3bc16d" /></a>
-
 ## <a name="introduction">🤖 Introduction</a>
 
 A storage management and file sharing platform that lets users effortlessly upload, organize, and share files. Built with the latest Next.js 15 and the Appwrite Node SDK, utilizing advanced features for seamless file management.
-
-If you're getting started and need assistance or face any bugs, join our active Discord community with over **34k+**
-members. It's a place where people help each other out.
-
-<a href="https://discord.com/invite/n6EdbFJ" target="_blank"><img src="https://github.com/sujatagunale/EasyRead/assets/151519281/618f4872-1e10-42da-8213-1d69e486d02e" /></a>
 
 ## <a name="tech-stack">⚙️ Tech Stack</a>
 
@@ -95,8 +76,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/JavaScript-Mastery-Pro/storage_management_solution.git
-cd storage_management_solution
+git clone https://github.com/nkayilovette03/StoreIt-CloudStorage.git
+cd storeit-cloudstorage
 ```
 
 **Installation**
@@ -138,64 +119,64 @@ Open [http://localhost:3000](http://localhost:3000) in your browser to view the 
 <summary><code>tailwind.config.ts</code></summary>
 
 ```typescript
-import type { Config } from 'tailwindcss';
+import type { Config } from "tailwindcss";
 
 const config: Config = {
-  darkMode: ['class'],
+  darkMode: ["class"],
   content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
       colors: {
         brand: {
-          DEFAULT: '#FA7275',
-          100: '#EA6365',
+          DEFAULT: "#FA7275",
+          100: "#EA6365",
         },
-        red: '#FF7474',
-        error: '#b80000',
-        green: '#3DD9B3',
-        blue: '#56B8FF',
-        pink: '#EEA8FD',
-        orange: '#F9AB72',
+        red: "#FF7474",
+        error: "#b80000",
+        green: "#3DD9B3",
+        blue: "#56B8FF",
+        pink: "#EEA8FD",
+        orange: "#F9AB72",
         light: {
-          100: '#333F4E',
-          200: '#A3B2C7',
-          300: '#F2F5F9',
-          400: '#F2F4F8',
+          100: "#333F4E",
+          200: "#A3B2C7",
+          300: "#F2F5F9",
+          400: "#F2F4F8",
         },
         dark: {
-          100: '#04050C',
-          200: '#131524',
+          100: "#04050C",
+          200: "#131524",
         },
       },
       fontFamily: {
-        poppins: ['var(--font-poppins)'],
+        poppins: ["var(--font-poppins)"],
       },
       boxShadow: {
-        'drop-1': '0px 10px 30px 0px rgba(66, 71, 97, 0.1)',
-        'drop-2': '0 8px 30px 0 rgba(65, 89, 214, 0.3)',
-        'drop-3': '0 8px 30px 0 rgba(65, 89, 214, 0.1)',
+        "drop-1": "0px 10px 30px 0px rgba(66, 71, 97, 0.1)",
+        "drop-2": "0 8px 30px 0 rgba(65, 89, 214, 0.3)",
+        "drop-3": "0 8px 30px 0 rgba(65, 89, 214, 0.1)",
       },
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)',
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
-        'caret-blink': {
-          '0%,70%,100%': { opacity: '1' },
-          '20%,50%': { opacity: '0' },
+        "caret-blink": {
+          "0%,70%,100%": { opacity: "1" },
+          "20%,50%": { opacity: "0" },
         },
       },
       animation: {
-        'caret-blink': 'caret-blink 1.25s ease-out infinite',
+        "caret-blink": "caret-blink 1.25s ease-out infinite",
       },
     },
   },
-  plugins: [require('tailwindcss-animate')],
+  plugins: [require("tailwindcss-animate")],
 };
 export default config;
 ```
@@ -635,84 +616,84 @@ export default config;
 ```typescript
 export const navItems = [
   {
-    name: 'Dashboard',
-    icon: '/assets/icons/dashboard.svg',
-    url: '/',
+    name: "Dashboard",
+    icon: "/assets/icons/dashboard.svg",
+    url: "/",
   },
   {
-    name: 'Documents',
-    icon: '/assets/icons/documents.svg',
-    url: '/documents',
+    name: "Documents",
+    icon: "/assets/icons/documents.svg",
+    url: "/documents",
   },
   {
-    name: 'Images',
-    icon: '/assets/icons/images.svg',
-    url: '/images',
+    name: "Images",
+    icon: "/assets/icons/images.svg",
+    url: "/images",
   },
   {
-    name: 'Media',
-    icon: '/assets/icons/video.svg',
-    url: '/media',
+    name: "Media",
+    icon: "/assets/icons/video.svg",
+    url: "/media",
   },
   {
-    name: 'Others',
-    icon: '/assets/icons/others.svg',
-    url: '/others',
+    name: "Others",
+    icon: "/assets/icons/others.svg",
+    url: "/others",
   },
 ];
 
 export const actionsDropdownItems = [
   {
-    label: 'Rename',
-    icon: '/assets/icons/edit.svg',
-    value: 'rename',
+    label: "Rename",
+    icon: "/assets/icons/edit.svg",
+    value: "rename",
   },
   {
-    label: 'Details',
-    icon: '/assets/icons/info.svg',
-    value: 'details',
+    label: "Details",
+    icon: "/assets/icons/info.svg",
+    value: "details",
   },
   {
-    label: 'Share',
-    icon: '/assets/icons/share.svg',
-    value: 'share',
+    label: "Share",
+    icon: "/assets/icons/share.svg",
+    value: "share",
   },
   {
-    label: 'Download',
-    icon: '/assets/icons/download.svg',
-    value: 'download',
+    label: "Download",
+    icon: "/assets/icons/download.svg",
+    value: "download",
   },
   {
-    label: 'Delete',
-    icon: '/assets/icons/delete.svg',
-    value: 'delete',
+    label: "Delete",
+    icon: "/assets/icons/delete.svg",
+    value: "delete",
   },
 ];
 
 export const sortTypes = [
   {
-    label: 'Date created (newest)',
-    value: '$createdAt-desc',
+    label: "Date created (newest)",
+    value: "$createdAt-desc",
   },
   {
-    label: 'Created Date (oldest)',
-    value: '$createdAt-asc',
+    label: "Created Date (oldest)",
+    value: "$createdAt-asc",
   },
   {
-    label: 'Name (A-Z)',
-    value: 'name-asc',
+    label: "Name (A-Z)",
+    value: "name-asc",
   },
   {
-    label: 'Name (Z-A)',
-    value: 'name-desc',
+    label: "Name (Z-A)",
+    value: "name-desc",
   },
   {
-    label: 'Size (Highest)',
-    value: 'size-desc',
+    label: "Size (Highest)",
+    value: "size-desc",
   },
   {
-    label: 'Size (Lowest)',
-    value: 'size-asc',
+    label: "Size (Lowest)",
+    value: "size-asc",
   },
 ];
 
@@ -725,8 +706,8 @@ export const MAX_FILE_SIZE = 50 * 1024 * 1024; // 50MB
 <summary><code>lib/utils.ts</code></summary>
 
 ```typescript
-import { clsx, type ClassValue } from 'clsx';
-import { twMerge } from 'tailwind-merge';
+import { clsx, type ClassValue } from "clsx";
+import { twMerge } from "tailwind-merge";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -738,16 +719,16 @@ export const convertFileToUrl = (file: File) => URL.createObjectURL(file);
 
 export const convertFileSize = (sizeInBytes: number, digits?: number) => {
   if (sizeInBytes < 1024) {
-    return sizeInBytes + ' Bytes'; // Less than 1 KB, show in Bytes
+    return sizeInBytes + " Bytes"; // Less than 1 KB, show in Bytes
   } else if (sizeInBytes < 1024 * 1024) {
     const sizeInKB = sizeInBytes / 1024;
-    return sizeInKB.toFixed(digits || 1) + ' KB'; // Less than 1 MB, show in KB
+    return sizeInKB.toFixed(digits || 1) + " KB"; // Less than 1 MB, show in KB
   } else if (sizeInBytes < 1024 * 1024 * 1024) {
     const sizeInMB = sizeInBytes / (1024 * 1024);
-    return sizeInMB.toFixed(digits || 1) + ' MB'; // Less than 1 GB, show in MB
+    return sizeInMB.toFixed(digits || 1) + " MB"; // Less than 1 GB, show in MB
   } else {
     const sizeInGB = sizeInBytes / (1024 * 1024 * 1024);
-    return sizeInGB.toFixed(digits || 2) + ' GB'; // 1 GB or more, show in GB
+    return sizeInGB.toFixed(digits || 2) + " GB"; // 1 GB or more, show in GB
   }
 };
 
@@ -764,79 +745,79 @@ export const calculatePercentage = (sizeInBytes: number) => {
 };
 
 export const getFileType = (fileName: string) => {
-  const extension = fileName.split('.').pop()?.toLowerCase();
+  const extension = fileName.split(".").pop()?.toLowerCase();
 
-  if (!extension) return { type: 'other', extension: '' };
+  if (!extension) return { type: "other", extension: "" };
 
   const documentExtensions = [
-    'pdf',
-    'doc',
-    'docx',
-    'txt',
-    'xls',
-    'xlsx',
-    'csv',
-    'rtf',
-    'ods',
-    'ppt',
-    'odp',
-    'md',
-    'html',
-    'htm',
-    'epub',
-    'pages',
-    'fig',
-    'psd',
-    'ai',
-    'indd',
-    'xd',
-    'sketch',
-    'afdesign',
-    'afphoto',
-    'afphoto',
+    "pdf",
+    "doc",
+    "docx",
+    "txt",
+    "xls",
+    "xlsx",
+    "csv",
+    "rtf",
+    "ods",
+    "ppt",
+    "odp",
+    "md",
+    "html",
+    "htm",
+    "epub",
+    "pages",
+    "fig",
+    "psd",
+    "ai",
+    "indd",
+    "xd",
+    "sketch",
+    "afdesign",
+    "afphoto",
+    "afphoto",
   ];
-  const imageExtensions = ['jpg', 'jpeg', 'png', 'gif', 'bmp', 'svg', 'webp'];
-  const videoExtensions = ['mp4', 'avi', 'mov', 'mkv', 'webm'];
-  const audioExtensions = ['mp3', 'wav', 'ogg', 'flac'];
+  const imageExtensions = ["jpg", "jpeg", "png", "gif", "bmp", "svg", "webp"];
+  const videoExtensions = ["mp4", "avi", "mov", "mkv", "webm"];
+  const audioExtensions = ["mp3", "wav", "ogg", "flac"];
 
   if (documentExtensions.includes(extension))
-    return { type: 'document', extension };
-  if (imageExtensions.includes(extension)) return { type: 'image', extension };
-  if (videoExtensions.includes(extension)) return { type: 'video', extension };
-  if (audioExtensions.includes(extension)) return { type: 'audio', extension };
+    return { type: "document", extension };
+  if (imageExtensions.includes(extension)) return { type: "image", extension };
+  if (videoExtensions.includes(extension)) return { type: "video", extension };
+  if (audioExtensions.includes(extension)) return { type: "audio", extension };
 
-  return { type: 'other', extension };
+  return { type: "other", extension };
 };
 
 export const formatDateTime = (isoString: string | null | undefined) => {
-  if (!isoString) return '—';
+  if (!isoString) return "—";
 
   const date = new Date(isoString);
 
   // Get hours and adjust for 12-hour format
   let hours = date.getHours();
   const minutes = date.getMinutes();
-  const period = hours >= 12 ? 'pm' : 'am';
+  const period = hours >= 12 ? "pm" : "am";
 
   // Convert hours to 12-hour format
   hours = hours % 12 || 12;
 
   // Format the time and date parts
-  const time = `${hours}:${minutes.toString().padStart(2, '0')}${period}`;
+  const time = `${hours}:${minutes.toString().padStart(2, "0")}${period}`;
   const day = date.getDate();
   const monthNames = [
-    'Jan',
-    'Feb',
-    'Mar',
-    'Apr',
-    'May',
-    'Jun',
-    'Jul',
-    'Aug',
-    'Sep',
-    'Oct',
-    'Nov',
-    'Dec',
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
   ];
   const month = monthNames[date.getMonth()];
 
@@ -845,62 +826,62 @@ export const formatDateTime = (isoString: string | null | undefined) => {
 
 export const getFileIcon = (
   extension: string | undefined,
-  type: FileType | string,
+  type: FileType | string
 ) => {
   switch (extension) {
     // Document
-    case 'pdf':
-      return '/assets/icons/file-pdf.svg';
-    case 'doc':
-      return '/assets/icons/file-doc.svg';
-    case 'docx':
-      return '/assets/icons/file-docx.svg';
-    case 'csv':
-      return '/assets/icons/file-csv.svg';
-    case 'txt':
-      return '/assets/icons/file-txt.svg';
-    case 'xls':
-    case 'xlsx':
-      return '/assets/icons/file-document.svg';
+    case "pdf":
+      return "/assets/icons/file-pdf.svg";
+    case "doc":
+      return "/assets/icons/file-doc.svg";
+    case "docx":
+      return "/assets/icons/file-docx.svg";
+    case "csv":
+      return "/assets/icons/file-csv.svg";
+    case "txt":
+      return "/assets/icons/file-txt.svg";
+    case "xls":
+    case "xlsx":
+      return "/assets/icons/file-document.svg";
     // Image
-    case 'svg':
-      return '/assets/icons/file-image.svg';
+    case "svg":
+      return "/assets/icons/file-image.svg";
     // Video
-    case 'mkv':
-    case 'mov':
-    case 'avi':
-    case 'wmv':
-    case 'mp4':
-    case 'flv':
-    case 'webm':
-    case 'm4v':
-    case '3gp':
-      return '/assets/icons/file-video.svg';
+    case "mkv":
+    case "mov":
+    case "avi":
+    case "wmv":
+    case "mp4":
+    case "flv":
+    case "webm":
+    case "m4v":
+    case "3gp":
+      return "/assets/icons/file-video.svg";
     // Audio
-    case 'mp3':
-    case 'mpeg':
-    case 'wav':
-    case 'aac':
-    case 'flac':
-    case 'ogg':
-    case 'wma':
-    case 'm4a':
-    case 'aiff':
-    case 'alac':
-      return '/assets/icons/file-audio.svg';
+    case "mp3":
+    case "mpeg":
+    case "wav":
+    case "aac":
+    case "flac":
+    case "ogg":
+    case "wma":
+    case "m4a":
+    case "aiff":
+    case "alac":
+      return "/assets/icons/file-audio.svg";
 
     default:
       switch (type) {
-        case 'image':
-          return '/assets/icons/file-image.svg';
-        case 'document':
-          return '/assets/icons/file-document.svg';
-        case 'video':
-          return '/assets/icons/file-video.svg';
-        case 'audio':
-          return '/assets/icons/file-audio.svg';
+        case "image":
+          return "/assets/icons/file-image.svg";
+        case "document":
+          return "/assets/icons/file-document.svg";
+        case "video":
+          return "/assets/icons/file-video.svg";
+        case "audio":
+          return "/assets/icons/file-audio.svg";
         default:
-          return '/assets/icons/file-other.svg';
+          return "/assets/icons/file-other.svg";
       }
   }
 };
@@ -919,51 +900,51 @@ export const constructDownloadUrl = (bucketFileId: string) => {
 export const getUsageSummary = (totalSpace: any) => {
   return [
     {
-      title: 'Documents',
+      title: "Documents",
       size: totalSpace.document.size,
       latestDate: totalSpace.document.latestDate,
-      icon: '/assets/icons/file-document-light.svg',
-      url: '/documents',
+      icon: "/assets/icons/file-document-light.svg",
+      url: "/documents",
     },
     {
-      title: 'Images',
+      title: "Images",
       size: totalSpace.image.size,
       latestDate: totalSpace.image.latestDate,
-      icon: '/assets/icons/file-image-light.svg',
-      url: '/images',
+      icon: "/assets/icons/file-image-light.svg",
+      url: "/images",
     },
     {
-      title: 'Media',
+      title: "Media",
       size: totalSpace.video.size + totalSpace.audio.size,
       latestDate:
         totalSpace.video.latestDate > totalSpace.audio.latestDate
           ? totalSpace.video.latestDate
           : totalSpace.audio.latestDate,
-      icon: '/assets/icons/file-video-light.svg',
-      url: '/media',
+      icon: "/assets/icons/file-video-light.svg",
+      url: "/media",
     },
     {
-      title: 'Others',
+      title: "Others",
       size: totalSpace.other.size,
       latestDate: totalSpace.other.latestDate,
-      icon: '/assets/icons/file-other-light.svg',
-      url: '/others',
+      icon: "/assets/icons/file-other-light.svg",
+      url: "/others",
     },
   ];
 };
 
 export const getFileTypesParams = (type: string) => {
   switch (type) {
-    case 'documents':
-      return ['document'];
-    case 'images':
-      return ['image'];
-    case 'media':
-      return ['video', 'audio'];
-    case 'others':
-      return ['other'];
+    case "documents":
+      return ["document"];
+    case "images":
+      return ["image"];
+    case "media":
+      return ["video", "audio"];
+    case "others":
+      return ["other"];
     default:
-      return ['document'];
+      return ["document"];
   }
 };
 ```
@@ -976,7 +957,7 @@ export const getFileTypesParams = (type: string) => {
 ```ts
 /* eslint-disable no-unused-vars */
 
-declare type FileType = 'document' | 'image' | 'video' | 'audio' | 'other';
+declare type FileType = "document" | "image" | "video" | "audio" | "other";
 
 declare interface ActionType {
   label: string;
@@ -1057,17 +1038,5 @@ declare interface ShareInputProps {
 ## <a name="links">🔗 Assets</a>
 
 - Assets used in the project can be found [here](https://drive.google.com/file/d/1NCQH7HNXjfZMQ1MzpX3uRCixSY32iWl2/view?usp=sharing)
-- [Watch Next.js 15 Crash Course ](https://www.youtube.com/watch?v=Zq5fmkH0T78)
-
-## <a name="more">🚀 More</a>
-
-**Advance your skills with Next.js Pro Course**
-
-Enjoyed creating this project? Dive deeper into our PRO courses for a richer learning adventure. They're packed with
-detailed explanations, cool features, and exercises to boost your skills. Give it a go!
-
-<a href="https://jsmastery.pro/next15" target="_blank">
-   <img src="https://github.com/user-attachments/assets/b8760e69-1f81-4a71-9108-ceeb1de36741" alt="Project Banner">
-</a>
 
 #
