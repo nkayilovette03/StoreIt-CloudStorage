@@ -20,16 +20,6 @@ const Dashboard = async () => {
   // Get usage summary
   const usageSummary = getUsageSummary(totalSpace);
 
-  // Move theme logic into a useEffect or make it SSR-safe
-  const getTheme = () => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("theme");
-    }
-    return null;
-  };
-
-  const theme = getTheme();
-
   return (
     <div className='dashboard-container'>
       <section>
@@ -46,8 +36,8 @@ const Dashboard = async () => {
               <div className='space-y-4'>
                 <div className='flex justify-between gap-2'>
                   <Image
-                    src={`${theme ? summary.iconDark : summary.icon}`}
-                    // src={summary.icon}
+                    // src={`${theme ? summary.iconDark : summary.icon}`}
+                    src={summary.icon}
                     width={100}
                     height={100}
                     alt='uploaded image'
